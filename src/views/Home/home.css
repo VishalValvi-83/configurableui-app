@@ -1,0 +1,10 @@
+.sale-banner {
+    background-image: url("https://png.pngtree.com/background/20210706/original/pngtree-sale-geometric-background-banner-picture-image_225125.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

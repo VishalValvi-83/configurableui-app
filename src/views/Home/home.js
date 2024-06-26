@@ -15,8 +15,9 @@ const Home = () => {
   return (
     <>
       <Slider />
+      <div style={{ backgroundImage: `url(${homepage.headingBanner})` }} className='banner '><h1 fw-bold style={{ color: theme.styles.headingColor }} className="display-4 text-center">{homepage.welcomeMessage}</h1></div>
       <div className="container text-center py-5">
-        <h1 fw-bold style={{ color: theme.styles.headingColor }} className="display-4 text-center">{homepage.welcomeMessage}</h1>
+
         <h2 className='my-3 text-center ' style={{ color: theme.styles.headingColor }}>Most Populars</h2>
         <div className="d-flex flex-wrap justify-content-center">
           {products.slice(0, mostPopularsLimit).map((product, index) => (
@@ -43,7 +44,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className='sale-banner'>
+          <div className='sale-banner banner'>
             <h2 className='my-3 text-center ' style={{ color: theme.styles.headingColor }}>Offers</h2>
           </div>
           <div className="d-flex flex-wrap justify-content-center">
@@ -53,7 +54,7 @@ const Home = () => {
                 id={sale.productId}
                 name={products.find((product) => product.id === sale.productId).name}
                 description={products.find((product) => product.id === sale.productId).description}
-                price={products.find((product) => product.id ===sale.productId).price}
+                price={products.find((product) => product.id === sale.productId).price}
                 image={products.find((product) => product.id === sale.productId).image}
                 sale={sale}
               />

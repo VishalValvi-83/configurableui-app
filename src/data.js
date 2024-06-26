@@ -1,6 +1,7 @@
 const homepage = {
       welcomeMessage: "Welcome to the Ultimate Furniture Shop!",
       promoText: "Summer Sale: Up to 50% Off!",
+      headingBanner : "https://www.krinteriors.co.in/wp-content/uploads/2021/11/About-us-top-banner.jpg",
       sliderContentsimage : [
         {
           image : "https://www.ulcdn.net/media/Collection/listings/FHS_Ending_Sale_Top.png?1718951194"
